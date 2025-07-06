@@ -17,18 +17,14 @@ import { usePathname } from "next/navigation";
 const MobileNav = () => {
   const pathname = usePathname();
   return (
-    <section className="w-full max-w-[260px]">
+    <section className="w-full max-w-[264px]">
       <Sheet>
         <SheetTrigger>
-          <Menu className="cursor-pointer max-lg:hidden" />
+          <Menu className="cursor-pointer lg:hidden" />
         </SheetTrigger>
-        <SheetContent>
+        <SheetContent side="left">
           <SheetHeader>
-            <SheetTitle>Are you absolutely sure?</SheetTitle>
-            <SheetDescription>
-              This action cannot be undone. This will permanently delete your
-              account and remove your data from our servers.
-            </SheetDescription>
+            <SheetTitle>Zura</SheetTitle>
           </SheetHeader>
         </SheetContent>
       </Sheet>
