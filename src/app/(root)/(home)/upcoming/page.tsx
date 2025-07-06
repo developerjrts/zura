@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Upcoming meets • Zura",
+  description: "Upcoming meets details and more",
+};
 
 const Upcoming = () => {
   return (

@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Previous Room • Zura",
+  description: "Previous meets details and more",
+};
 
 const Previous = () => {
   return (

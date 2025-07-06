@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Personal Room • Zura",
+  description: "Create personal room & start real time meet with Zura",
+};
 
 const PersonalRoom = () => {
   return (
