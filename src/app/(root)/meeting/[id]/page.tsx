@@ -1,13 +1,13 @@
 import React from "react";
 
-interface props {
+interface PageProps {
   params: {
     id: string;
   };
 }
 
-const Meeting = ({ params }: props) => {
+const MeetingPage = ({ params }: PageProps) => {
   return <div>Meeting Id: {params.id}</div>;
 };
 
-export default Meeting;
+export default MeetingPage;
