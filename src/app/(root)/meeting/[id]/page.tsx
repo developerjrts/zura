@@ -1,13 +1,12 @@
 import React from "react";
 
 interface PageProps {
-  params: {
-    id: string;
-  };
+  params: Promise<{ id: string }>;
 }
 
-const MeetingPage = ({ params }: PageProps) => {
-  return <div>Meeting Id: {params.id}</div>;
+const MeetingPage = async ({ params }: PageProps) => {
+  const { id } = await params;
+  return <div>Meeting Id: {id}</div>;
 };
 
 export default MeetingPage;
