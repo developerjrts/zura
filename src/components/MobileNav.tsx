@@ -20,7 +20,7 @@ const MobileNav = () => {
     <section className="w-full max-w-[260px]">
       <Sheet>
         <SheetTrigger>
-          <Menu />
+          <Menu className="cursor-pointer max-lg:hidden" />
         </SheetTrigger>
         <SheetContent>
           <SheetHeader>
