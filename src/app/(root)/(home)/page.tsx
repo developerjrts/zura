@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Home • Zura",
+  title: "Zura • We create emotions",
   description: "Welcome to zura a real time meet",
 };
 
