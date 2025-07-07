@@ -2,6 +2,7 @@ import Logo from "@/assets/Logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import MobileNav from "./MobileNav";
+import { SignedIn, UserButton } from "@clerk/nextjs";
 
 const Navbar = () => {
   return (
@@ -11,6 +12,9 @@ const Navbar = () => {
         <p className="font-bold text-white text-2xl">Zura</p>
       </Link>
       <div className="flex justify-between items-center gap-5">
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
         <MobileNav />
       </div>
     </nav>
