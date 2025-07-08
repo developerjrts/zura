@@ -29,7 +29,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <ClerkProvider>
+      <ClerkProvider
+        appearance={{
+          layout: {
+            socialButtonsVariant: "iconButton",
+          },
+          variables: {
+            colorText: "#fff",
+            colorPrimary: "#0E78F9",
+            colorBackground: "#2a2a2a",
+            colorInputBackground: "#3a3a3a",
+            colorInputText: "#fff",
+          },
+        }}
+      >
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased text-white`}
           style={{
